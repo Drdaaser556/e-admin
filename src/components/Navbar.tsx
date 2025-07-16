@@ -29,7 +29,6 @@ import { SidebarTrigger, useSidebar } from "./ui/sidebar";
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const { toggleSidebar } = useSidebar();
-  const username = "Arif";
   return (
     <nav className="p-4 flex items-center justify-between sticky top-0 bg-background z-10">
       {/* LEFT */}
@@ -58,7 +57,7 @@ const Navbar = () => {
             <LayoutDashboard className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
           </Button>
         </Link>
-        <Link href={`/users/${username}`}>
+        <Link href="/users/arif">
           <Button variant="outline" size="icon">
             <User className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
           </Button>

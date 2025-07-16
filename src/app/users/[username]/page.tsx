@@ -20,18 +20,14 @@ import { Button } from "@/components/ui/button";
 import EditUser from "@/components/EditUser";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import AppLineChart from "@/components/AppLineChart";
+import { type Metadata } from "next";
 
-interface PageProps {
-  params: {
-    username: string;
-  };
-}
 
-const SingleUserPage = ({ params }: PageProps) => {
+const SingleUserPage = () => {
   return (
     <div className="">
       <div className="text-xl font-semibold">
-        Welcome to {params.username}'s profile!
+        Welcome to Arif&apos;s profile!
       </div>
       <Breadcrumb>
         <BreadcrumbList>
